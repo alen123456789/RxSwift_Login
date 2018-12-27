@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33092E5F21D4F3EF00BC0064 /* heros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33092E5921D4F3EE00BC0064 /* heros.plist */; };
+		33092E6021D4F3EF00BC0064 /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33092E5A21D4F3EF00BC0064 /* ContainerViewModel.swift */; };
+		33092E6121D4F3EF00BC0064 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33092E5B21D4F3EF00BC0064 /* Hero.swift */; };
+		33092E6221D4F3EF00BC0064 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33092E5C21D4F3EF00BC0064 /* ContainerViewController.swift */; };
+		33092E6321D4F3EF00BC0064 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33092E5D21D4F3EF00BC0064 /* LoginViewModel.swift */; };
+		33092E6421D4F3EF00BC0064 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33092E5E21D4F3EF00BC0064 /* LoginViewController.swift */; };
 		5E6B763059F5E258635CC05F /* Pods_RxSwift_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD876ACF3F87C747E11FABA /* Pods_RxSwift_Login.framework */; };
 		B7E59AF321CCE203005D187D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E59AF221CCE203005D187D /* AppDelegate.swift */; };
 		B7E59AF821CCE203005D187D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E59AF621CCE203005D187D /* Main.storyboard */; };
@@ -40,6 +46,12 @@
 /* Begin PBXFileReference section */
 		0272518B943EDAC7E6CD7E22 /* Pods-RxSwift_Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_Login.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift_Login/Pods-RxSwift_Login.release.xcconfig"; sourceTree = "<group>"; };
 		0FD876ACF3F87C747E11FABA /* Pods_RxSwift_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33092E5921D4F3EE00BC0064 /* heros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heros.plist; sourceTree = "<group>"; };
+		33092E5A21D4F3EF00BC0064 /* ContainerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
+		33092E5B21D4F3EF00BC0064 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		33092E5C21D4F3EF00BC0064 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		33092E5D21D4F3EF00BC0064 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		33092E5E21D4F3EF00BC0064 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		37F3E4D2DA8AC0509152CEEB /* Pods-RxSwift_Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_Login.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift_Login/Pods-RxSwift_Login.debug.xcconfig"; sourceTree = "<group>"; };
 		B7E59AEF21CCE202005D187D /* RxSwift_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwift_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E59AF221CCE203005D187D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +146,12 @@
 				B7E59B2121CCE37A005D187D /* RegisterViewController.swift */,
 				B7E59B2521CCF56B005D187D /* RegisterViewModel.swift */,
 				B7E59AF621CCE203005D187D /* Main.storyboard */,
+				33092E5C21D4F3EF00BC0064 /* ContainerViewController.swift */,
+				33092E5A21D4F3EF00BC0064 /* ContainerViewModel.swift */,
+				33092E5B21D4F3EF00BC0064 /* Hero.swift */,
+				33092E5921D4F3EE00BC0064 /* heros.plist */,
+				33092E5E21D4F3EF00BC0064 /* LoginViewController.swift */,
+				33092E5D21D4F3EF00BC0064 /* LoginViewModel.swift */,
 			);
 			path = RxSwift_Login;
 			sourceTree = "<group>";
@@ -274,6 +292,7 @@
 			files = (
 				B7E59AFD21CCE20B005D187D /* LaunchScreen.storyboard in Resources */,
 				B7E59AFA21CCE20B005D187D /* Assets.xcassets in Resources */,
+				33092E5F21D4F3EF00BC0064 /* heros.plist in Resources */,
 				B7E59AF821CCE203005D187D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,9 +365,14 @@
 			files = (
 				B7E59AF321CCE203005D187D /* AppDelegate.swift in Sources */,
 				B7E59B2621CCF56C005D187D /* RegisterViewModel.swift in Sources */,
+				33092E6221D4F3EF00BC0064 /* ContainerViewController.swift in Sources */,
+				33092E6021D4F3EF00BC0064 /* ContainerViewModel.swift in Sources */,
 				B7E59B2A21CCF5A8005D187D /* Service.swift in Sources */,
+				33092E6121D4F3EF00BC0064 /* Hero.swift in Sources */,
 				B7E59B2221CCE37A005D187D /* RegisterViewController.swift in Sources */,
 				B7E59B2821CCF58D005D187D /* Protocol.swift in Sources */,
+				33092E6421D4F3EF00BC0064 /* LoginViewController.swift in Sources */,
+				33092E6321D4F3EF00BC0064 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

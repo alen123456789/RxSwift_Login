@@ -24,7 +24,7 @@ enum Result {
  下面我们自定义了一个Observer，对UIlabel进行了扩展，根据result结果，进行他的text和textColor的显示
  
  最后我们对UITextField进行扩展，根据result结果，进行他的isEnabled进行设置
-
+ 
  */
 extension Result {
     var isValid: Bool {
