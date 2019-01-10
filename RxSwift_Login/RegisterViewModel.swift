@@ -39,6 +39,7 @@ class RegisterViewModel {
      stackOfInts.push(2)
      print(stackOfInts.items)
      */
+    
     //input:
     let username = Variable<String>("") // username 既是一个 observable 也是一个 observer ,声明为一个 variable 对象
     

@@ -44,7 +44,6 @@ class RegisterViewController: UIViewController {
         //将ViewModel中username处理结果usernameUsable绑定到usernameLabel显示文案上，根据不同的结果显示不同的文案
         //将ViewModel中username处理结果usernameUsable绑定到passwordTextField是否可以输入，根据不同的结果判断password是否可以输入。
         
-        
         /*
          总结一下这个过程：
          输入文本框Observable流->ViewModel中username对文本框进行监听->然后username调用service进行处理得到usernameUsable结果流->提示lable对usernameUsable进行监听刷新UI。
@@ -53,8 +52,6 @@ class RegisterViewController: UIViewController {
          数据改变->ViewModel->UI刷新
          这就是响应式编程，一路的监听
          */
-        
-        
         
         // 添加 passwordTextField 绑定
         // 将 viewModel 中的 password 对 passwordTextField 进行监听
@@ -96,6 +93,7 @@ class RegisterViewController: UIViewController {
          
          [weak self] : 也可以用来解决循环引用，其他的作用，以我目前的知识还没有意识到。 [ weak self] 时self 可能是为nil的，最常见的crash是，当我们在一个下拉刷新请求数据时，再网络请求还没有完成时，就立刻退出当前页面，那么vc就被销毁了，网络请求完成的闭包再用self就会造成crash
          */
+        
         viewModel.registerButtonEnabled
             .subscribe(onNext: { [unowned self]  valid in
                 self.registerButton.isEnabled = valid

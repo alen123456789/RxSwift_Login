@@ -26,6 +26,7 @@ enum Result {
  最后我们对UITextField进行扩展，根据result结果，进行他的isEnabled进行设置
  
  */
+
 extension Result {
     var isValid: Bool {
         switch self {
@@ -63,8 +64,6 @@ extension Result {
     }
 }
 
-
-
 //extension Reactive where Base: UILabel {
 //    var validationResult: UIBindingObserver<Base, Result> {
 //        return UIBindingObserver(UIElement: base) { label, result in
@@ -73,7 +72,6 @@ extension Result {
 //        }
 //    }
 //}
-
 
 extension Reactive where Base: UILabel {
     var validationResult: Binder<Result> {
@@ -88,7 +86,6 @@ extension Reactive where Base: UILabel {
 // UIBindingObserver这个东西很有用的，创建我们自己的监听者，有时候RxCocoa(RxSwift中对UIKit的一个扩展库)给的扩展不够我们使用，比如一个UITextField有个isEnabled属性，我想把这个isEnabled变为一个observer，我们可以这样做：
 
 // public init<Target: AnyObject>(_ target: Target, scheduler: ImmediateSchedulerType = MainScheduler(), binding: @escaping (Target, Value) -> ())
-
 
 extension Reactive where Base: UITextField {
     var inputEnabled: Binder<Result> {
@@ -105,4 +102,3 @@ extension Reactive where Base: UIBarButtonItem {
         }
     }
 }
-

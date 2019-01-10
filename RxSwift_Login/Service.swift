@@ -20,7 +20,6 @@ class ValidationService {
     
     //这里返回一个observable对象，因为我们这个请求过程需要被监听
     func validateUsername(_ username: String) -> Observable<Result> {
-        
         //just是创建一个sequence只能发出一种特殊的事件，能正常结束
         if username.count == 0 {
             return .just(.empty) //当字符数等于0时什么都不做
@@ -53,7 +52,6 @@ class ValidationService {
         }
     }
     
-    
     //密码框
     func validatePassword(_ password: String) -> Result {
         if password.count == 0 {
@@ -80,7 +78,6 @@ class ValidationService {
     }
     
     //    上面的返回结果都是一个Result类型的值，因为我们外面不要对这个处理过程进行监听，所以不必返回一个新的序列
-    
     
     //注册方法
     //这里把注册信息写到本地的 plist 文件，写入成功就返回 ok ，否则就是 failed
@@ -118,7 +115,6 @@ class ValidationService {
         return .just(.failed(message: "密码错误"))
     }
 }
-
 
 //搜索
 class SearchService {

@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 
 class LoginViewModel {
+    
     //output:
     // 声明这些 output 是 Driver 类型的，第一个是 username 处理结果流，第二个登录按钮是否可用的流，第三个是登录结果流
     let usernameUsable: Driver<Result>
@@ -41,12 +42,5 @@ class LoginViewModel {
         loginButtonEnabled = input.password
             .map{ $0.count > 0 }
             .asDriver()
-        
-        
     }
-    
-    
-    
-    
-    
 }

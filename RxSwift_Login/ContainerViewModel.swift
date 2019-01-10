@@ -24,7 +24,4 @@ class ContainerViewModel {
                 return service.getHeros(withName: text)
             }.asDriver(onErrorJustReturn: [])
         }
-    
-    
-    
 }
