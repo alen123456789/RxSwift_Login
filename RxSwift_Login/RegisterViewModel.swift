@@ -109,7 +109,7 @@ class RegisterViewModel {
                 return service.register(username, password: password)
                     .observeOn(MainScheduler.instance)
                     .catchErrorJustReturn(.failed(message: "注册出错"))
-            }
+            } 
             .share(replay: 1, scope: .forever)
     }
 }
